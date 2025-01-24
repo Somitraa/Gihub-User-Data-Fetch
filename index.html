@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="icon" href="febb.png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Get Your GitHub Viewer</h2>
+            <input type="text" placeholder="ENTER User Name" id="input"><br><br>
+            <button onclick="generate()">Check</button><br><br>
+            <a href="" id="idd"></a>
+        </div>
+    </div>
+    <script>
+        let input=document.getElementById("input");
+        let idd = document.getElementById("idd");
+
+        function generate(){
+            idd.href ="https://github.com/"+input.value;
+            document.getElementById("idd").innerHTML = "view profile";
+        }
+
+    </script>
+</body>
+</html>
